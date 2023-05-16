@@ -18,7 +18,7 @@ router.post("/signup", async (req, res) => {
         const data = await user.save();
         res.status(200).json({ "message": "successfully saved user" });
     } catch (error) {
-        res.status(400).json({ "message": error });
+        res.status(400).json({ "message": error.message });
     }
 
 })

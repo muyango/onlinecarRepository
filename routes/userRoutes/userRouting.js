@@ -8,7 +8,7 @@ const checkAuth = require("../../middlewares/checkAuthentication");
 const uploadCloudinary = require("../../middlewares/cloudinarySetting");
 const carModel = require("../../model/carEntity")
 
-router.post("/signup", Validation.checkEmail, async (req, res) => {
+router.post("/signup", async (req, res) => {
     const fname = req.body.fname;
     const lname = req.body.lname;
     const email = req.body.email;

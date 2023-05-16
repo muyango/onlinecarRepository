@@ -12,6 +12,6 @@ app.use("/api/users",userRoutes);
 
 
 
-app.listen(6000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("SERVER STARTED ON PORT 6000");
 })
